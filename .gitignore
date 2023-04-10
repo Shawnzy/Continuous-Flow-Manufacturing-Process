@@ -132,4 +132,4 @@ dmypy.json
 *.code-workspace
 
 # Large data files
-data/*/*.pkl
+*.pkl
