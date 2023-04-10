@@ -12,3 +12,5 @@ dependencies:
   - scikit-learn
   - ipykernel
   - black
+  - xgboost
+  - lightgbm
