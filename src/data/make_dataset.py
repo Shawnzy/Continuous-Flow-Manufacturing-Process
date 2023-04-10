@@ -2,10 +2,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Import raw data
 df = pd.read_csv("../../data/raw/continuous_factory_process.csv")
 
 
-def process_dataframe(df):
+# perform basic data processing and create a dataframe datetime index
+def process_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Process the input DataFrame by selecting relevant columns, removing 'Setpoint' columns, and setting the 'time_stamp' as index.
 
@@ -31,4 +33,5 @@ def process_dataframe(df):
 
 df_processed = process_dataframe(df)
 
+# Save processed data to disk
 df_processed.to_pickle("../../data/interim/data_processed.pkl")
