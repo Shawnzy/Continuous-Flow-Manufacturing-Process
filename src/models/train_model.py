@@ -11,7 +11,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 
 
 df = pd.read_pickle("../../data/processed/best_features.pkl")
-df_basic = pd.read_pickle("../../data/interim/data_processed.pkl")
+# df_basic = pd.read_pickle("../../data/interim/data_processed.pkl")
 
 
 def experiment_models(df, target_column, test_size=0.2, scale=True):
